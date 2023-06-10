@@ -7,21 +7,23 @@
 // Metodo para acceder a una posicion de letra
 // console.log(mensajeCompleto.charAt(2));
 
-let mensaje: String = 'PEDRO SE LA COME';
-let mensajeAdicional: String = 'La comida obviamente';
-let mensajeCompleto: String = mensaje +' '+ mensajeAdicional;
-let mensajeMayusculas: String = mensajeCompleto.toUpperCase();
-let mensajeMinisculas: String = mensajeCompleto.toLowerCase();
-let mensajeGuiones: String = mensaje.replace(/ /g,'_');
+import { Usuario, cancionInterface } from "./interfaces/interfaces";
 
-console.log(mensajeGuiones);
+// let mensaje: String = 'PEDRO SE LA COME';
+// let mensajeAdicional: String = 'La comida obviamente';
+// let mensajeCompleto: String = mensaje +' '+ mensajeAdicional;
+// let mensajeMayusculas: String = mensajeCompleto.toUpperCase();
+// let mensajeMinisculas: String = mensajeCompleto.toLowerCase();
+// let mensajeGuiones: String = mensaje.replace(/ /g,'_');
+
+// console.log(mensajeGuiones);
 
 //number
 
-let edad: number = 19;
-let numero: number =10;
-let numeroNegativo: number =-20;
-let suma:number;
+// let edad: number = 19;
+// let numero: number =10;
+// let numeroNegativo: number =-20;
+// let suma:number;
 
 
 //truncar decimales
@@ -164,34 +166,9 @@ const pokemon : pokemonInterface = {
 
 
 
-  ///
-  interface cancionInterface{
-    titulo: string;
-    artista: string;
-    album: album
-    duracion: string;
-    genero: string;
-    reproducciones: number;
-    popularidad: number;
-
-  }
-  interface album{
-    nombre: string;
-    lanzamiento: number;
-    productor: productor;
-  }
-
-  interface productor{
-    nombre: string;
-    estudio: string;
-
-  }
 
 
-
-
-
-  const cancion : cancionInterface= {
+  const cancion : cancionInterface = {
     titulo: 'Bohemian Rhapsody',
     artista: 'Queen',
     album: {
@@ -205,5 +182,22 @@ const pokemon : pokemonInterface = {
     duracion: '6:07',
     genero: 'Rock',
     reproducciones: 5000000,
-    popularidad: 4.5
+    popularidad: 4.5,
+    
   };
+
+  cancion.estatus = true;
+   const usuario: Usuario = {};
+
+
+  usuario.name = 'obed';
+  usuario.lastname = 'ruiz';
+  usuario.age = 25;
+
+  Object.keys(usuario).forEach((value,key)=>{
+
+    console.log(usuario[value]);
+
+  })
+
+ 

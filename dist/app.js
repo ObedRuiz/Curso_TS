@@ -7,18 +7,19 @@
 // let mensajeGuiones = mensaje.replace(/ /g,'_');
 // Metodo para acceder a una posicion de letra
 // console.log(mensajeCompleto.charAt(2));
-let mensaje = 'PEDRO SE LA COME';
-let mensajeAdicional = 'La comida obviamente';
-let mensajeCompleto = mensaje + ' ' + mensajeAdicional;
-let mensajeMayusculas = mensajeCompleto.toUpperCase();
-let mensajeMinisculas = mensajeCompleto.toLowerCase();
-let mensajeGuiones = mensaje.replace(/ /g, '_');
-console.log(mensajeGuiones);
+Object.defineProperty(exports, "__esModule", { value: true });
+// let mensaje: String = 'PEDRO SE LA COME';
+// let mensajeAdicional: String = 'La comida obviamente';
+// let mensajeCompleto: String = mensaje +' '+ mensajeAdicional;
+// let mensajeMayusculas: String = mensajeCompleto.toUpperCase();
+// let mensajeMinisculas: String = mensajeCompleto.toLowerCase();
+// let mensajeGuiones: String = mensaje.replace(/ /g,'_');
+// console.log(mensajeGuiones);
 //number
-let edad = 19;
-let numero = 10;
-let numeroNegativo = -20;
-let suma;
+// let edad: number = 19;
+// let numero: number =10;
+// let numeroNegativo: number =-20;
+// let suma:number;
 //truncar decimales
 // suma  = Number((numero/3).toFixed(4));
 // console.log (suma);
@@ -78,6 +79,14 @@ const cancion = {
     duracion: '6:07',
     genero: 'Rock',
     reproducciones: 5000000,
-    popularidad: 4.5
+    popularidad: 4.5,
 };
+cancion.estatus = true;
+const usuario = {};
+usuario.name = 'obed';
+usuario.lastname = 'ruiz';
+usuario.age = 25;
+Object.keys(usuario).forEach((value, key) => {
+    console.log(usuario[value]);
+});
 //# sourceMappingURL=app.js.map
