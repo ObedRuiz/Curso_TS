@@ -1,22 +1,10 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const operaciones_1 = require("./helpers/operaciones");
-//calcular el area y perimetro de un cuadrado
-// calcular el area y perimetro de un circulo
-// calcular el area y perimetro de un triangulo
-const figuras = {
-    circulo: {
-        radio: 10
-    },
-    triangulo: {
-        base: 65,
-        altura: 80
-    },
-    cuadrado: {
-        lado: 80
-    }
+const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const ParImpar = (numeros) => {
+    const numberPar = numeros.filter((numero) => numero % 2 === 0);
+    const numberImp = numeros.filter((numero) => numero % 2 !== 1);
+    return { numberImp, numberPar };
 };
-console.log((0, operaciones_1.areaPerimetroCuadrado)(figuras.cuadrado.lado));
-console.log((0, operaciones_1.areaPerimetroCirculo)(figuras.circulo.radio, Math.PI));
-console.log((0, operaciones_1.areaPerimetroTriangulo)(figuras.triangulo.base, figuras.triangulo.altura));
+console.log(ParImpar(num));
+// crear funcion que se encargue de obtener los numero impares y ``pares
 //# sourceMappingURL=app.js.map

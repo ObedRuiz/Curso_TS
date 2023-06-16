@@ -1,27 +1,13 @@
 
-import { areaPerimetroCuadrado,areaPerimetroTriangulo,areaPerimetroCirculo  } from "./helpers/operaciones";
-//calcular el area y perimetro de un cuadrado
+const num = [1,2,3,4,5,6,7,8,9,10];
+const ParImpar = (numeros: number[])=>{
 
-// calcular el area y perimetro de un circulo
+    const numberPar = numeros.filter((numero:number) => numero % 2 ===0);
+    const numberImp = numeros.filter((numero:number) => numero % 2 !== 1);
+    return {numberImp,numberPar};
 
-// calcular el area y perimetro de un triangulo
+}
 
+console.log(ParImpar(num));
 
-
-const figuras ={
-  circulo: {
-    radio:10
-  },
-  triangulo: {
-    base: 65,
-    altura: 80
-  },
-  cuadrado:{
-    lado:80
-  }
-};
-console.log(areaPerimetroCuadrado(figuras.cuadrado.lado));
-
-console.log(areaPerimetroCirculo(figuras.circulo.radio,Math.PI));
-
-console.log(areaPerimetroTriangulo(figuras.triangulo.base,figuras.triangulo.altura))
+// crear funcion que se encargue de obtener los numero impares y ``pares

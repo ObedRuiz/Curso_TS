@@ -1,23 +1,36 @@
-type Perimetro = {
-
-    area:number;
-    perimetro:number;
-};
-
+// type ParesImpares = {
+//     pares:number[],
+//     impares:number[]
+// };
 
 
 
 
-export const areaPerimetroCuadrado = (lado: number)=>{
 
-    let area = lado*lado;
-    let perimetro = lado*4;
-
-    return {area,perimetro}
-
-}
+// export const paresImpares = (numeros: number[]): ParesImpares =>{
+//     const pares: number[]= [];
+//     const impares: number[]= [];
 
 
-export const areaPerimetroTriangulo =(base:number,altura:number): Perimetro => ( { area: (base*altura)/2, perimetro:base*3 } )
+//     for(let i=0 ; i < numeros.length;i++){
 
-export const areaPerimetroCirculo=(radio:number,pi:number): Perimetro => ( { area:pi*(Math.pow(radio,2)), perimetro:pi*(radio*2) } )
+//         if(numeros[i] % 2 === 0) {
+//             pares.push(numeros[i]);
+//         }else{
+
+//             impares.push(numeros[i]);
+//         }
+//     }
+//     const respuesta={
+//        pares,
+//        impares
+//     };
+//   return respuesta;
+// };
+
+// const suma = (a: number, b: number, callback: (suma: number) => void) => {
+//         let suma = a + b;
+//         callback(suma);
+// };
+
+
